@@ -1,6 +1,6 @@
 """Graficar en python 2 variables"""
-import numpy as np
-import matplotlib.pyplot as plt
+import numpy as np      #Libreria numpy
+import matplotlib.pyplot as plt     #Libreria para graficar
 
 x = np.arange(0,10,0.2) #Rango de las x para que se visualice la grafica
 y1 = np.cos(x)  #Variable 1

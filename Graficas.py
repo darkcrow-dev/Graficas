@@ -11,6 +11,6 @@ plt.plot(x,y1,'o',linewidth=3,color=(0.2,0.1,0.4))  #La variable se vuelve en ci
 plt.plot(x,y2,'-',linewidth=2,color='g')    #La variable se vuelve verde y lineal
 plt.grid()      #Agrega cuadriculado a la grafica
 plt.axis('equal')
-plt.xlabel('x')     #Titulo de las x
+plt.xlabel('x')     #Titulo de las x   
 plt.ylabel('y')     #Titulo de las y
 plt.title('2 variables')    #Titulo de la grafica

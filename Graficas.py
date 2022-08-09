@@ -14,3 +14,4 @@ plt.axis('equal')
 plt.xlabel('x')     #Titulo de las x   
 plt.ylabel('y')     #Titulo de las y
 plt.title('2 variables')    #Titulo de la grafica
+plt.show()

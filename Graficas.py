@@ -1,17 +1,27 @@
 """Graficar en python 2 variables"""
 
+from tkinter import END
 import numpy as np      #Libreria numpy
 import matplotlib.pyplot as plt     #Libreria para graficar
 
-x = np.arange(0,10,0.2) #Rango de las x para que se visualice la grafica
-y1 = np.cos(x)  #Variable 1
-y2 = np.sin(x)  #Variable 2
+n = 0       
+m = 0
+x1 = []     #Variable 1
+x2 = []     #Variable 2
 
-plt.plot(x,y1,'o',linewidth=3,color=(0.2,0.1,0.4))  #La variable se vuelve en circulos
-plt.plot(x,y2,'-',linewidth=2,color='g')    #La variable se vuelve verde y lineal
-plt.grid()      #Agrega cuadriculado a la grafica
-plt.axis('equal')
-plt.xlabel('x')     #Titulo de las x   
-plt.ylabel('y')     #Titulo de las y
+for i in range(0, 20):
+    n = i + n/2
+    x1.append(n)
+
+for i in range(0, 15):
+    m = i + 2*(m/3)
+    x2.append(m)
+
+
+plt.plot(x1)    #Grafica de la variable x2
+plt.plot(x2, marker = 'o', linewidth = 2) #Grafina de la variable x2 con un linea gruesa
+plt.grid()      #Se agregan cuadriculas
+plt.xlabel('x', fontsize = 14)     #Titulo de las x   
+plt.ylabel('y      ', rotation = 0, fontsize = 14)     #Titulo de las y
 plt.title('2 variables')    #Titulo de la grafica
-plt.show()
+plt.show()      #Se muestran las graficas

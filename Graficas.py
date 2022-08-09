@@ -1,11 +1,10 @@
 """Graficar en python 2 variables"""
 
-from tkinter import END
 import numpy as np      #Libreria numpy
 import matplotlib.pyplot as plt     #Libreria para graficar
 
-n = 0       
-m = 0
+n = 0       #Contador 1 
+m = 0       #Contador 2
 x1 = []     #Variable 1
 x2 = []     #Variable 2
 

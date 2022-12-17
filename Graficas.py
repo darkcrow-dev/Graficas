@@ -1,6 +1,5 @@
 """Graficar en python 2 variables"""
 
-import numpy as np      #Libreria numpy
 import matplotlib.pyplot as plt     #Libreria para graficar
 
 n = 0       #Contador 1 
